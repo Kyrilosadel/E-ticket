@@ -1,0 +1,91 @@
+.movie-card {
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 25px;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+}
+
+    .movie-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .movie-card .card-img-top {
+        height: 380px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .movie-card:hover .card-img-top {
+        transform: scale(1.05);
+    }
+
+    .movie-card .card-body {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .movie-card .card-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        color: #343a40;
+    }
+
+    .movie-card .card-text {
+        color: #6c757d;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .movie-card .btn {
+        margin-top: 15px;
+        padding: 0.5rem 1rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .movie-card .btn-primary {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+    }
+
+        .movie-card .btn-primary:hover {
+            background-color: #0b5ed7;
+            border-color: #0a58ca;
+            transform: translateY(-2px);
+        }
+
+    .movie-card .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        cursor: not-allowed;
+    }
+
+/* Rating stars */
+.movie-rating {
+    color: #ffc107;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+/* Price styling */
+.movie-price {
+    font-weight: 600;
+    color: #28a745;
+    font-size: 1.1rem;
+}
+
+/* Cinema name styling */
+.cinema-name {
+    font-style: italic;
+    color: #17a2b8;
+}
